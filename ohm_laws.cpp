@@ -75,10 +75,10 @@ int main() {
             // Check for invalid values, negative numbers or zero
             if (resistance <= 0 || voltage < 0) {
                 if (resistance == 0) {
-                    std::cout << "Error: Resistance cannot be zero.\n";
+                    std::cout << "Error: Resistance cannot be zero.\n\n";
                 } else {
                     std::cout
-                    << "Resistance and Voltage must be positive numbers.\n";
+                    << "Resistance and Voltage must be positive numbers.\n\n";
                 }
                 // Go back to the start of the loop
                 continue;
@@ -117,10 +117,10 @@ int main() {
             // Check for invalid values negative numbers or zero
             if (current <= 0 || voltage < 0) {
                 if (current == 0) {
-                    std::cout << "Error: Current cannot be zero.\n";
+                    std::cout << "Error: Current cannot be zero.\n\n";
                 } else {
                     std::cout
-                    << "Current and Voltage must be positive numbers.\n";
+                    << "Current and Voltage must be positive numbers.\n\n";
                 }
                 // Go back to the start of the loop
                 continue;
@@ -160,7 +160,7 @@ int main() {
             // Check for invalid values (negative or zero)
             if (current <= 0 || resistance <= 0) {
                 std::cout
-                << "Current and Resistance must be positive and non-zero.\n";
+                << "Current and Resistance must be positive and non-zero.\n\n";
                 continue;  // Retry
             }
 
